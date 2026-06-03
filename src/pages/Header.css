@@ -1,0 +1,271 @@
+.header-container {
+    height: 64px;
+    background: #1e2a5e;
+    border-bottom: 3px solid #FFD500;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    gap: 12px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.header-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 390px;
+    width: 50px;
+    height: 100%;
+    background: #FFD500;
+    transform: skewX(-15deg);
+    z-index: 0;
+}
+
+.header-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 230px;
+    width: 50px;
+    height: 100%;
+    background: #FFD500;
+    transform: skewX(-15deg);
+    z-index: 0;
+}
+
+.header-container>* {
+    position: relative;
+    z-index: 1;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.booking-logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.booking-text {
+    color: #FFD500;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.ksrtc-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.ksrtc-logo {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+}
+
+.header-dropdowns {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.header-dropdown {
+    height: 26px;
+    width: 140px;
+    background-color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    border-radius: 4px !important;
+}
+
+.station-dd {
+    width: 175px;
+    background-color: black !important;
+
+}
+
+.header-dropdown .p-dropdown-label {
+    color: black !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    padding: 4px 8px !important;
+    line-height: 18px !important;
+}
+
+.station-dd .p-dropdown-label{
+    color: white !important;
+}
+
+.header-dropdown .p-dropdown-trigger {
+    color: black !important;
+    width: 24px !important;
+}
+
+.station-dd .p-dropdown-trigger{
+    color: white !important;
+}
+
+.header-dropdown:not(.p-disabled):hover {
+    border-color: #FFD500 !important;
+}
+
+.header-dropdown .p-dropdown-panel {
+    background: #1e2a5e;
+    border: 1px solid #FFD500;
+}
+
+.header-dropdown .p-dropdown-item {
+    color: #ffffff !important;
+    font-size: 12px !important;
+}
+
+.header-dropdown .p-dropdown-item:hover {
+    background: rgba(255, 213, 0, 0.15) !important;
+}
+
+.header-search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 0;
+}
+
+.search-field {
+    width: 100%;
+}
+
+.search-input {
+    width: 100% !important;
+    height: 34px !important;
+    border-radius: 20px !important;
+    background: white !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+    font-size: 13px !important;
+    padding-left: 36px !important;
+}
+
+.search-input::placeholder {
+    color: rgba(0, 0, 0, 0.256) !important;
+}
+
+.search-input:focus {
+    border-color: #FFD500 !important;
+    box-shadow: 0 0 0 2px rgba(255, 213, 0, 0.2) !important;
+    outline: none !important;
+}
+
+.search-icon-color {
+    color: #FFD500 !important;
+}
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.notification {
+    position: relative;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notif-bell {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.notif-badge {
+    position: absolute !important;
+    top: -2px !important;
+    right: -4px !important;
+    min-width: 16px !important;
+    height: 16px !important;
+    font-size: 9px !important;
+    line-height: 16px !important;
+}
+
+.language-dropdown {
+    height: 30px;
+    width: 75px;
+    background: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    border-radius: 4px !important;
+}
+
+.language-dropdown .p-dropdown-label {
+    color: black !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    padding: 5px 6px !important;
+    letter-spacing: 0.5px !important;
+}
+
+.language-dropdown .p-dropdown-trigger {
+    color: black !important;
+    width: 20px !important;
+}
+
+.language-dropdown:hover {
+    border-color: #FFD500 !important;
+}
+
+/* User info text block */
+.user-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+    text-align: right;
+}
+
+.welcome-text {
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.user-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.date-text {
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Profile picture */
+.profile-pic {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.profile-pic:hover {
+    border-color: #FFD500;
+}
